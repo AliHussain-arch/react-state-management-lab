@@ -109,12 +109,13 @@ const App = () => {
     <>
       <h1>Zombie Fighters</h1>
       <div>
-        <h2>Money: {money}</h2>
-        <h2>Team Strength: {totalStrength}</h2>
-        <h2>Team Agility: {totalAgility}</h2>
+        <h3>Money: {money}</h3>
+        <h3>Team Strength: {totalStrength}</h3>
+        <h3>Team Agility: {totalAgility}</h3>
+        <hr/>
       </div>
       <div id='Team'>
-        <h2>Team</h2>
+        <h2 style={{ fontWeight: 'bold'}}>Team</h2>
         <ul>
           {team.length === 0 ? <div>Pick some team members!</div> : null}
           {team.map((teamMember) => (
@@ -129,9 +130,9 @@ const App = () => {
           ))}
         </ul>
       </div>
-
+      <hr/>
       <div id='Fighters'>
-        <h2>Fighters</h2>
+        <h2 style={{ fontWeight: 'bold'}}>Fighters</h2>
         <ul>
           {zombieFighters.map((zombieFighter) => (
             <li key={generateUniqueKey()}>
