@@ -117,7 +117,7 @@ const App = () => {
       <div id='Team'>
         <h2 style={{ fontWeight: 'bold'}}>Team</h2>
         <ul>
-          {team.length === 0 ? <div>Pick some team members!</div> : null}
+          {team.length === 0 ? <div>&nbsp;&nbsp;&nbsp;&nbsp;Pick some team members!</div> : null}
           {team.map((teamMember) => (
             <li key={teamMember.instanceId}>
               <img src={teamMember.img} alt={teamMember.name} />
